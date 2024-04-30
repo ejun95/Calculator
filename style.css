@@ -1,0 +1,83 @@
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#container {
+  display: flex;
+  flex-direction: column;
+  margin-top: 125px;
+  padding: 10px;
+  justify-content: center;
+  align-items: left;
+  gap: 100px;
+  width: 400px;
+  height: 600px;
+  background-color: blue;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  box-shadow: 10px 10px 5px black;
+}
+
+#display, #btn-container {
+  margin-left: 25px;
+}
+
+#display {
+  display: flex;
+  background-color: lightgray;
+  width: 325px;
+  height: 75px;
+  margin-left: 35px;
+  box-shadow: 0 0 1px 1px black,0 0 0 10px darkgray, 0 0 5px 13px black;
+}
+
+#btn-container {
+  display: flex;
+}
+
+#btn-container-numbers {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+  height: 300px;
+  flex-wrap: wrap;
+  gap: 10px;
+  row-gap: 15px;
+}
+
+#btn-container-ops {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+}
+
+.number-btn, .number-btn-0, .ops-btn {
+  display: flex;
+  flex-direction: row;
+  width: 75px;
+  height: 50px;
+  border-radius: 5px;
+  background-color: lightgray;
+  color: blue;
+  font-size: 24px;
+  font-weight: bold;
+  justify-content: flex-start;
+  align-content: flex-start;
+  box-shadow: 2px 2px 0 black;
+}
+
+.number-btn-0 {
+  width: 160px;
+}
+
+.ops-btn {
+  margin-right: 25px;
+}
+
+.number-btn:hover, .number-btn-0:hover, .ops-btn:hover {
+  background-color: white;
+}

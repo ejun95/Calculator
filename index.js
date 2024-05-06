@@ -19,6 +19,21 @@ buttons.forEach(button => {
       if(!display.textContent.includes('.')) {
         display.textContent += event.target.innerText
       }
+    } else if(event.target.id === 'clear-all') {
+      display.textContent = '';
+      num1 = 0;
+      num2 = 0;
+    } else if(event.target.id === 'pos-neg') {
+      if(!display.textContent.includes('-')) {
+        display.textContent = '-' + display.textContent;
+      } else {
+        display.textContent = display.textContent.substring(1);
+      }
+      display.textContent = display.textContent
+    } else if(event.target.id === 'backspace') {
+      if(display.textContent !== '') {
+        display.textContent = display.textContent.substring(0, display.textContent.length - 1);
+      }
     } else {
       if(display.textContent.length < 12) {
         display.textContent += event.target.innerText

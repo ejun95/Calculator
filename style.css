@@ -42,6 +42,14 @@ body {
   font-size: 48px;
 }
 
+#other-btn {
+  display: flex;
+  height: 20px;
+  padding: 0;
+  margin: 0;
+  flex-direction: row;
+}
+
 #btn-container {
   display: flex;
 }
@@ -59,7 +67,7 @@ body {
 #btn-container-ops {
   display: flex;
   flex-direction: column;
-  gap: 9px;
+  gap: 15px;
 }
 
 .number-btn, .ops-btn {

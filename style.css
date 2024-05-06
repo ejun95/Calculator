@@ -3,6 +3,11 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
+  height: 100%;
+  width: 100%;
+  padding: 0;
+  margin: 0;
 }
 
 #container {
@@ -97,4 +102,19 @@ body {
 
 .number-btn:hover, .number-btn-0:hover, .ops-btn:hover {
   background-color: white;
+}
+
+footer {
+  display: flex;
+  background-color: darkgray;
+  color: white;
+  text-shadow: 2px 1px black;
+  font-size: 20px;
+  width: 100vw;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 0;
+  margin: 0;
+  position: fixed;
+  bottom: 0px;
 }

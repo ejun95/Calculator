@@ -11,7 +11,9 @@
 
   <body>
     <div id='container'>
-      <div id='display'></div>
+      <div id='display'>
+        <span id='display-text'></span>
+      </div>
       <div id='btn-container'>
         <div id='btn-container-numbers'>
           <button class='number-btn'>7</button>
@@ -23,15 +25,16 @@
           <button class='number-btn'>1</button>
           <button class='number-btn'>2</button>
           <button class='number-btn'>3</button>
-          <button class='number-btn-0'>0</button>
-          <button class='number-btn'>.</button>
+          <button class='number-btn' id='clear'>C</button>
+          <button class='number-btn'>0</button>
+          <button class='number-btn' id='.'>.</button>
         </div>
         <div id='btn-container-ops'>
-          <button class='ops-btn'>÷</button>
-          <button class='ops-btn'>*</button>
-          <button class='ops-btn'>-</button>
-          <button class='ops-btn'>+</button>
-          <button class='ops-btn'>=</button>
+          <button class='ops-btn' id='divide'>÷</button>
+          <button class='ops-btn' id='multiply'>*</button>
+          <button class='ops-btn' id='subtract'>-</button>
+          <button class='ops-btn' id='add'>+</button>
+          <button class='ops-btn' id='equals'>=</button>
         </div> 
       </div>
     </div>

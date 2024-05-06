@@ -1,4 +1,5 @@
 body {
+  background-color:whitesmoke;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -32,7 +33,13 @@ body {
   width: 325px;
   height: 75px;
   margin-left: 35px;
+  align-items: center;
+  justify-content: right;
   box-shadow: 0 0 1px 1px black,0 0 0 10px darkgray, 0 0 5px 13px black;
+}
+
+#display-text {
+  font-size: 48px;
 }
 
 #btn-container {
@@ -55,7 +62,7 @@ body {
   gap: 9px;
 }
 
-.number-btn, .number-btn-0, .ops-btn {
+.number-btn, .ops-btn {
   display: flex;
   flex-direction: row;
   width: 75px;
@@ -70,12 +77,14 @@ body {
   box-shadow: 2px 2px 0 black;
 }
 
-.number-btn-0 {
+#number-btn-0 {
   width: 160px;
 }
 
 .ops-btn {
   margin-right: 25px;
+  background-color: red;
+  color: white;
 }
 
 .number-btn:hover, .number-btn-0:hover, .ops-btn:hover {
